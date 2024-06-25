@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <Disclosure
       as="nav"
-      className="container mx-auto border-4 border-black bg-gray-100"
+      className="container mx-auto bg-gray-100"
     >
       {({ open }) => (
         <>
