@@ -1,5 +1,6 @@
 import appstore from "../assets/images/appstore.png"
 import playstore from "../assets/images/playstore.png"
+import illustration from "../assets/images/illustration.png"
 
 const Header = () => {
   return (
@@ -44,9 +45,9 @@ const Header = () => {
         </div>
         <div className="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
           <img
-            src="https://placehold.co/300x600"
+            src={illustration}
             alt="Hand holding a phone with app interface"
-            className="rounded-lg shadow-lg"
+            className="rounded-lg"
           />
         </div>
       </div>
