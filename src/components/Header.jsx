@@ -7,7 +7,7 @@ const Header = () => {
     <div className="container  bg-gray-100 mx-auto flex flex-col md:flex-row items-center p-6 space-y-6 md:space-y-0 md:space-x-12">
       {/* Left Content */}
       <div className="md:w-1/2 space-y-6 border-4 border-black">
-        <h1 className="text-7xl font-bold text-center md:text-left">
+        <h1 className="text-7xl font-semibold text-center md:text-left">
           Kelola Bisnis <br/>Laundry Anda  <br/>dengan
           <span className="px-2 py-1 rounded-full bg-blue-500 text-white ">Mudah</span>
         </h1>
