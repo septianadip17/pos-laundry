@@ -23,7 +23,10 @@ function classNames(...classes) {
 
 const Navbar = () => {
   return (
-    <Disclosure as="nav" className="container mx-auto border-4 border-black bg-gray-100">
+    <Disclosure
+      as="nav"
+      className="container mx-auto border-4 border-black bg-gray-100"
+    >
       {({ open }) => (
         <>
           <div className=" max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -65,15 +68,19 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className="hidden sm:flex sm:items-center border-4 border-black items-end">
+              <div className="hidden sm:flex sm:items-center  items-end">
                 {/* Demo Aplikasi */}
                 <button
                   type="button"
-                  className="relative flex items-center rounded-full p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  className="relative flex items-center rounded-full p-1 text-gray-400 transition duration-300 ease-in-out transform hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <span className="sr-only">Demo Aplikasi</span>
-                  <img src={demoIcon} alt="demo icon" className="h-6 w-6" />
-                  <h2 className="text-black text-sm font-medium ml-2">
+                  <img
+                    src={demoIcon}
+                    alt="demo icon"
+                    className="h-6 w-6 transition duration-300 ease-in-out transform hover:scale-110"
+                  />
+                  <h2 className="text-black text-sm font-medium ml-2 transition duration-300 ease-in-out transform hover:scale-110">
                     Demo Aplikasi
                   </h2>
                 </button>
