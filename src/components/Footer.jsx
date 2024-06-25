@@ -39,9 +39,15 @@ const links = {
   },
 };
 
+const socialLinks = [
+  { src: facebook, alt: "Facebook icon", href: "#" },
+  { src: instagram, alt: "Instagram icon", href: "#" },
+  { src: youtube, alt: "YouTube icon", href: "#" },
+];
+
 const Footer = () => {
   return (
-    <div className="container mx-auto py-5 ">
+    <div className="container mx-auto py-5">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo and Social Media */}
         <div className="md:col-span-1">
@@ -53,15 +59,17 @@ const Footer = () => {
             Aplikasi POS Laundry untuk membantu owner laundry
           </p>
           <div className="flex space-x-4 mt-4">
-            <a href="#" target="_blank">
-              <img src={facebook} alt="Facebook icon" className="w-6 h-6" />
-            </a>
-            <a href="#" target="_blank">
-              <img src={instagram} alt="Instagram icon" className="w-6 h-6" />
-            </a>
-            <a href="#" target="_blank">
-              <img src={youtube} alt="YouTube icon" className="w-6 h-6" />
-            </a>
+            {socialLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform transform hover:scale-110"
+              >
+                <img src={link.src} alt={link.alt} className="w-6 h-6" />
+              </a>
+            ))}
           </div>
         </div>
 
