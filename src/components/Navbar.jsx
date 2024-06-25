@@ -34,7 +34,7 @@ const Navbar = () => {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
-                <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <DisclosureButton className="inline-flex items-start justify-start rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -68,14 +68,14 @@ const Navbar = () => {
                 {/* Demo Aplikasi */}
                 <button
                   type="button"
-                  className="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  className="relative flex items-center rounded-full p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <span className="sr-only">Demo Aplikasi</span>
-                  <img src={demoIcon} alt="demo icon" />
+                  <img src={demoIcon} alt="demo icon" className="h-6 w-6" />
+                  <h2 className="text-black text-sm font-medium ml-2">
+                    Demo Aplikasi
+                  </h2>
                 </button>
-                <h2 className="text-black text-sm font-medium ml-2">
-                  Demo Aplikasi
-                </h2>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      : "text-black hover:bg-gray-700 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
