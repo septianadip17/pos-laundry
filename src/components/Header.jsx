@@ -8,8 +8,12 @@ const Header = () => {
       {/* Left Content */}
       <div className="md:w-1/2 space-y-6">
         <h1 className="text-7xl font-semibold text-center md:text-left">
-          Kelola Bisnis <br/>Laundry Anda  <br/>dengan
-          <span className="px-2 py-1 rounded-full bg-blue-500 text-white ">Mudah</span>
+          Kelola Bisnis <br />
+          Laundry Anda <br />
+          dengan
+          <span className="px-2 py-1 rounded-full bg-blue-500 text-white ">
+            Mudah
+          </span>
         </h1>
         <p className="text-center md:text-left text-gray-400">
           POS Laundry mempermudah Anda dalam mengelola order, keuangan, dan
@@ -18,8 +22,9 @@ const Header = () => {
         </p>
 
         {/* buttons store*/}
-
-          <h1 className="text-1xl text-center md:text-left">Download Aplikasi:</h1>
+        <h1 className="text-1xl text-center md:text-left">
+          Download Aplikasi:
+        </h1>
         <div className="flex justify-center md:justify-start space-x-4">
           <button className="px-4 py-2 rounded-lg flex items-center space-x-2 bg-blue-500 text-white">
             <img src={playstore} alt="Playstore icon" className="w-6" />
