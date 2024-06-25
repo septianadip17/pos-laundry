@@ -23,15 +23,16 @@ function classNames(...classes) {
 
 const Navbar = () => {
   return (
-    <Disclosure as="nav" className="bg-white">
+    <Disclosure as="nav" className="container mx-auto border-4 border-black bg-gray-100">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className=" max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
-              <div className="flex items-center">
+              <div className="flex items-start">
                 <img className="h-8 w-auto" src={logo} alt="Laundry Logo" />
                 <h2 className="font-bold text-2xl ml-2">Laundry</h2>
               </div>
+
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
                 <DisclosureButton className="inline-flex items-start justify-start rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -53,7 +54,7 @@ const Navbar = () => {
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
-                            : "text-black hover:bg-gray-700 hover:text-white",
+                            : "text-black hover:bg-blue-500 hover:text-white",
                           "rounded-md px-3 py-2 text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -64,7 +65,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className="hidden sm:flex sm:items-center">
+              <div className="hidden sm:flex sm:items-center border-4 border-black items-end">
                 {/* Demo Aplikasi */}
                 <button
                   type="button"
@@ -89,8 +90,8 @@ const Navbar = () => {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-black hover:bg-gray-700 hover:text-white",
+                      ? "bg-blue-900 text-white"
+                      : "text-black hover:bg-blue-700 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}

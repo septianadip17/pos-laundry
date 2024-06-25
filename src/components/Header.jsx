@@ -1,55 +1,58 @@
-import appstore from "../assets/images/appstore.png"
-import playstore from "../assets/images/playstore.png"
-import illustration from "../assets/images/illustration.png"
+import appstore from "../assets/images/appstore.png";
+import playstore from "../assets/images/playstore.png";
+import illustration from "../assets/images/illustration.png";
 
 const Header = () => {
   return (
-    <div className="bg-background text-foreground p-6">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
-        <div className="lg:w-1/2">
-          <h1 className="text-4xl font-bold mb-4">
-            Kelola Bisnis Laundry Anda dengan
-            <span className="bg-primary text-primary-foreground px-2 py-1 rounded">
-              Mudah
-            </span>
-          </h1>
-          <p className="text-muted-foreground mb-6">
-            POS Laundry mempermudah Anda dalam mengelola order, keuangan, dan
-            mengatur bisnis secara efisien. Semua yang Anda butuhkan dalam satu
-            aplikasi praktis.
-          </p>
-          <div className="flex items-center mb-6">
-            <img src={playstore} alt="playstore" className="w-8" />
-            <button className="bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded-lg mr-2">
-              Playstore
-            </button>
-            <img src={appstore} alt="appstore" className="w-8"/>
-            <button className="bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded-lg">
-              App Store
-            </button>
+    <div className="container  bg-gray-100 mx-auto flex flex-col md:flex-row items-center p-6 space-y-6 md:space-y-0 md:space-x-12">
+      {/* Left Content */}
+      <div className="md:w-1/2 space-y-6 border-4 border-black">
+        <h1 className="text-7xl font-bold text-center md:text-left">
+          Kelola Bisnis <br/>Laundry Anda  <br/>dengan
+          <span className="px-2 py-1 rounded-full bg-blue-500 text-white ">Mudah</span>
+        </h1>
+        <p className="text-center md:text-left">
+          POS Laundry mempermudah Anda dalam mengelola order, keuangan, dan
+          mengatur bisnis secara efisien. Semua yang Anda butuhkan dalam satu
+          aplikasi praktis.
+        </p>
+
+        {/* buttons store*/}
+        <div className="flex justify-center md:justify-start space-x-4">
+          <button className="px-4 py-2 rounded-lg flex items-center space-x-2 bg-blue-500 text-white">
+            <img src={playstore} alt="Playstore icon" className="w-6" />
+            <span>Playstore</span>
+          </button>
+          <button className="px-4 py-2 rounded-lg flex items-center space-x-2 bg-blue-500 text-white border-dotted">
+            <img src={appstore} alt="App Store icon" className="w-6" />
+            <span>App Store</span>
+          </button>
+        </div>
+
+        {/* stats */}
+        <div className="flex justify-center md:justify-start space-x-5 mt-4">
+          <div className="text-center">
+            <p className="text-xl font-bold text-start">25K</p>
+            <p>Download</p>
           </div>
-          <div className="flex space-x-8 text-center">
-            <div>
-              <p className="text-xl font-bold">25K</p>
-              <p className="text-muted-foreground">Download</p>
-            </div>
-            <div>
-              <p className="text-xl font-bold">12K</p>
-              <p className="text-muted-foreground">Mitra laundry</p>
-            </div>
-            <div>
-              <p className="text-xl font-bold">4.8</p>
-              <p className="text-muted-foreground">Rating playstore</p>
-            </div>
+          <div className="text-center">
+            <p className="text-xl font-bold text-start">12K</p>
+            <p>Mitra laundry</p>
+          </div>
+          <div className="text-center">
+            <p className="text-xl font-bold text-start">4.8</p>
+            <p>Rating playstore</p>
           </div>
         </div>
-        <div className="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
-          <img
-            src={illustration}
-            alt="Hand holding a phone with app interface"
-            className="rounded-lg"
-          />
-        </div>
+      </div>
+
+      {/* illustration */}
+      <div className="md:w-1/2 flex justify-center border-4 border-black">
+        <img
+          src={illustration}
+          alt="Phone showing app screenshot"
+          className="rounded-lg"
+        />
       </div>
     </div>
   );
