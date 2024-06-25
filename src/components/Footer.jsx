@@ -4,32 +4,44 @@ import instagram from "../assets/icons/instagram.svg";
 import youtube from "../assets/icons/youtube.svg";
 
 const links = {
-  features: [
-    { name: "Manajemen order", href: "#" },
-    { name: "Analisa keuangan", href: "#" },
-    { name: "Manajemen pelanggan", href: "#" },
-    { name: "Voucher laundry", href: "#" },
-  ],
-  pricing: [
-    { name: "1 bulan", href: "#" },
-    { name: "6 bulan", href: "#" },
-    { name: "12 bulan", href: "#" },
-  ],
-  company: [
-    { name: "Tentang kami", href: "#" },
-    { name: "Negara", href: "#" },
-    { name: "Karir", href: "#" },
-  ],
-  others: [
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms", href: "#" },
-    { name: "Condition", href: "#" },
-  ],
+  features: {
+    title: "Fitur",
+    items: [
+      { name: "Manajemen order", href: "#" },
+      { name: "Analisa keuangan", href: "#" },
+      { name: "Manajemen pelanggan", href: "#" },
+      { name: "Voucher laundry", href: "#" },
+    ],
+  },
+  pricing: {
+    title: "Harga",
+    items: [
+      { name: "1 bulan", href: "#" },
+      { name: "6 bulan", href: "#" },
+      { name: "12 bulan", href: "#" },
+    ],
+  },
+  company: {
+    title: "Perusahaan",
+    items: [
+      { name: "Tentang kami", href: "#" },
+      { name: "Negara", href: "#" },
+      { name: "Karir", href: "#" },
+    ],
+  },
+  others: {
+    title: "Lainnya",
+    items: [
+      { name: "Privacy Policy", href: "#" },
+      { name: "Terms", href: "#" },
+      { name: "Condition", href: "#" },
+    ],
+  },
 };
 
 const Footer = () => {
   return (
-    <div className="py-5">
+    <div className="container mx-auto py-5 ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo and Social Media */}
         <div className="md:col-span-1">
@@ -53,56 +65,26 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Features, Pricing, Company, and Others */}
-        <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="font-semibold">Fitur</h3>
-            <ul className="mt-2 space-y-2">
-              {links.features.map((item, index) => (
-                <li key={index} className="hover:underline">
-                  <a href={item.href} target="_blank" rel="noopener noreferrer">
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold">Harga</h3>
-            <ul className="mt-2 space-y-2">
-              {links.pricing.map((item, index) => (
-                <li key={index} className="hover:underline">
-                  <a href={item.href} target="_blank" rel="noopener noreferrer">
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold">Perusahaan</h3>
-            <ul className="mt-2 space-y-2">
-              {links.company.map((item, index) => (
-                <li key={index} className="hover:underline">
-                  <a href={item.href} target="_blank" rel="noopener noreferrer">
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold">Lainnya</h3>
-            <ul className="mt-2 space-y-2">
-              {links.others.map((item, index) => (
-                <li key={index} className="hover:underline">
-                  <a href={item.href} target="_blank" rel="noopener noreferrer">
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+        {/* Links Section */}
+        <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          {Object.entries(links).map(([key, section]) => (
+            <div key={key}>
+              <h3 className="font-semibold">{section.title}</h3>
+              <ul className="mt-2 space-y-2">
+                {section.items.map((item, index) => (
+                  <li key={index} className="hover:underline">
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
       <div className="text-center mt-8 text-gray-600">
