@@ -11,19 +11,23 @@ const Solution = () => {
           alt="speaker icon"
           className="w-6 h-6 text-blue-500"
         />
-        <span className="px-2 rounded-full font-semibold text-blue-500">Solusi</span>
+        <span className="px-2 rounded-full font-semibold text-blue-500">
+          Solusi
+        </span>
       </div>
 
       {/* Title and description */}
-      <h1 className="text-4xl font-bold mb-2 text-center">
-        Solusi inovatif pebisnis laundry <br className="hidden md:inline" />{" "}
-        mengembangkan bisnisnya
-      </h1>
-      <p className="text-gray-500 text-center mb-8">
-        Semua yang Anda butuhkan untuk menjalankan bisnis laundry Anda{" "}
-        <br className="hidden md:inline" /> dengan efisien dan efektif kini ada
-        dalam satu aplikasi.
-      </p>
+      <div className="container">
+        <h1 className="text-4xl font-bold mb-2 text-center">
+          Solusi inovatif pebisnis laundry <br className="hidden md:inline" />{" "}
+          mengembangkan bisnisnya
+        </h1>
+        <p className="text-gray-500 text-center mb-8">
+          Semua yang Anda butuhkan untuk menjalankan bisnis laundry Anda{" "}
+          <br className="hidden md:inline" /> dengan efisien dan efektif kini
+          ada dalam satu aplikasi.
+        </p>
+      </div>
 
       {/* Before after image */}
       <div className="flex justify-center">
