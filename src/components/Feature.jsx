@@ -8,7 +8,7 @@ import customerManagement from "../assets/images/customer-management.png";
 
 const Feature = () => {
   return (
-    <div className="container flex flex-col items-center mx-auto p-6">
+    <div className="container flex flex-col items-center mx-auto p-6" id="fitur">
       {/* Tag Feature */}
       <div className="flex items-center mb-4 border-2 border-blue-500 rounded-full p-2">
         <img src={star} alt="star icon" className="w-6 h-6 text-blue-500" />

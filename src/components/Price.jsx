@@ -3,7 +3,7 @@ import check from "../assets/icons/check-contained.svg";
 
 const Price = () => {
   return (
-    <div className="container flex flex-col items-center mx-auto p-6">
+    <div className="container flex flex-col items-center mx-auto p-6" id="harga">
       {/* Tag solution */}
       <div className="flex items-center mb-4 border-2 border-blue-500 rounded-full p-2">
         <img src={list} alt="list icon" className="w-6 h-6 text-blue-500" />

@@ -3,7 +3,7 @@ import speaker from "../assets/icons/speaker.svg";
 
 const Solution = () => {
   return (
-    <div className="flex flex-col items-center p-6">
+    <div className="flex flex-col items-center p-6 mb-4" id="solusi">
       {/* Tag solution */}
       <div className="flex items-center mb-4 border-2 border-blue-500 rounded-full p-2">
         <img
