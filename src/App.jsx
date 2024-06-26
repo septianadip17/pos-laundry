@@ -5,6 +5,7 @@ import Solution from "./components/Solution";
 import Feature from "./components/Feature";
 import Price from "./components/Price";
 import Testimonial from "./components/Testimonial";
+import Download from "./components/Download";
 import Footer from "./components/Footer";
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Feature />
       <Price />
       <Testimonial />
+      <Download />
       <Footer />
     </>
   );
