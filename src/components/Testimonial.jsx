@@ -102,7 +102,7 @@ const Testimonial = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-card p-4 rounded-lg shadow">
+          <div key={index} className="bg-card p-4 rounded-lg shadow bg-gray-100">
             <div className="flex items-center mb-2">
               <Avatar src={testimonial.avatar} alt={`${testimonial.name} avatar`} />
               <div>
