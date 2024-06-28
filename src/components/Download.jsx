@@ -6,6 +6,7 @@ import illustrationMockup from "../assets/images/illustration-mockup.png";
 const Download = () => {
   return (
     <div className="container mx-auto p-6 rounded-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 bg-blue-400">
+      {/* Left Content */}
       <div className="flex-1">
         <div className="container">
           {/* Tag Start Now */}
@@ -48,8 +49,9 @@ const Download = () => {
         </div>
       </div>
 
-      {/* Illustration mockup */}
+      {/* Right Content */}
       <div className="flex-1 flex justify-center">
+        {/* Illustration mockup */}
         <img
           src={illustrationMockup}
           alt="Mobile App Screenshot"
