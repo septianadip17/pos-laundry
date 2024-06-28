@@ -47,10 +47,16 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <div className="container mx-auto py-5">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="container mx-auto py-10">
+      {" "}
+      {/* Increased padding-y */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+        {" "}
+        {/* Increased gap */}
         {/* Logo and Social Media */}
-        <div className="md:col-span-1">
+        <div className="md:col-span-1 mb-10">
+          {" "}
+          {/* Added margin-bottom */}
           <div className="flex items-center space-x-1">
             <img src={logo} alt="Laundry logo" className="w-6 h-6" />
             <span className="text-xl font-bold">Laundry</span>
@@ -72,9 +78,10 @@ const Footer = () => {
             ))}
           </div>
         </div>
-
         {/* Links Section */}
-        <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pl-10">
+          {" "}
+          {/* Added padding-left */}
           {Object.entries(links).map(([key, section]) => (
             <div key={key}>
               <h3 className="font-semibold">{section.title}</h3>
