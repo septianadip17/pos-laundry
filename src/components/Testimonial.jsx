@@ -14,56 +14,47 @@ const testimonials = [
   {
     name: "Benten Wodring",
     avatar: bentenWodring,
-    text:
-      "POS Laundry sangat membantu dalam mengelola pesanan. Kini, saya bisa memantau setiap pesanan dengan mudah dan akurat.",
+    text: "POS Laundry sangat membantu dalam mengelola pesanan. Kini, saya bisa memantau setiap pesanan dengan mudah dan akurat.",
   },
   {
     name: "Abah Anis",
     avatar: abahAnis,
-    text:
-      "Laporan analitik dari aplikasi ini membantu saya memahami bisnis dengan lebih baik. Saya bisa membuat keputusan yang lebih tepat.",
+    text: "Laporan analitik dari aplikasi ini membantu saya memahami bisnis dengan lebih baik. Saya bisa membuat keputusan yang lebih tepat.",
   },
   {
     name: "Ngolo Kante",
     avatar: ngoloKante,
-    text:
-      "Aplikasi ini sangat membantu operasional laundry. Proses pencatatan dan pengelolaan pesanan menjadi lebih efisien.",
+    text: "Aplikasi ini sangat membantu operasional laundry. Proses pencatatan dan pengelolaan pesanan menjadi lebih efisien.",
   },
   {
     name: "Pak Zain",
     avatar: pakZain,
-    text:
-      "Aplikasi ini sangat user-friendly. Pelacakan keuangan juga jadi lebih mudah. Saya bisa melihat pendapatan dengan lebih rinci.",
+    text: "Aplikasi ini sangat user-friendly. Pelacakan keuangan juga jadi lebih mudah. Saya bisa melihat pendapatan dengan lebih rinci.",
   },
   {
     name: "Eric Young",
     avatar: ericYoung,
-    text:
-      "POS Laundry benar-benar mengubah cara saya menjalankan bisnis. Semua data tersedia dalam satu aplikasi.",
+    text: "POS Laundry benar-benar mengubah cara saya menjalankan bisnis. Semua data tersedia dalam satu aplikasi.",
   },
   {
     name: "Antonie",
     avatar: antonie,
-    text:
-      "Saya sangat puas dengan POS Laundry. Laporan yang dihasilkan sangat lengkap dan membantu saya dalam mengambil keputusan bisnis.",
+    text: "Saya sangat puas dengan POS Laundry. Laporan yang dihasilkan sangat lengkap dan membantu saya dalam mengambil keputusan bisnis.",
   },
   {
     name: "Syakirah",
     avatar: syakirah,
-    text:
-      "Dengan POS Laundry, saya bisa mengelola pelanggan dengan lebih baik. Fitur pengingat pesanan sangat berguna!",
+    text: "Dengan POS Laundry, saya bisa mengelola pelanggan dengan lebih baik. Fitur pengingat pesanan sangat berguna!",
   },
   {
     name: "Andrea Bostanica",
     avatar: andreaBostanica,
-    text:
-      "Fitur manajemen keuangan di POS Laundry sangat membantu. Saya bisa melacak pengeluaran dan pemasukan dengan mudah.",
+    text: "Fitur manajemen keuangan di POS Laundry sangat membantu. Saya bisa melacak pengeluaran dan pemasukan dengan mudah.",
   },
   {
     name: "Hansen Loe",
     avatar: hansenLoe,
-    text:
-      "Aplikasi ini sangat bermanfaat untuk pemilik laundry. Semua jadi lebih teratur dan saya bisa fokus pada pengembangan bisnis.",
+    text: "Aplikasi ini sangat bermanfaat untuk pemilik laundry. Semua jadi lebih teratur dan saya bisa fokus pada pengembangan bisnis.",
   },
 ];
 
@@ -78,40 +69,46 @@ Avatar.propTypes = {
 
 const Testimonial = () => {
   return (
-    <div className="container mx-auto p-6" id="testimonial">
-      <div className="flex items-center mb-4 justify-center border-2 border-blue-500 rounded-full p-2">
-        <img
-          src={testimonialIcon}
-          alt="testimonial icon"
-          className="w-6 h-6 text-blue-500"
-        />
-        <span className="px-2 rounded-full font-semibold text-blue-500">
-          Testimonial
-        </span>
+    <div className="container mx-auto p-6" id="testimoni">
+      {/* Testimonial Tag */}
+      <div className="flex flex-col items-center">
+        <div className="flex justify-center items-center mb-4">
+          <div className="inline-flex items-center border-2 border-blue-500 rounded-full p-2">
+            <img
+              src={testimonialIcon}
+              alt="testimonial icon"
+              className="w-6 h-6 text-blue-500"
+            />
+            <span className="px-2 rounded-full font-semibold text-blue-500">
+              Testimonial
+            </span>
+          </div>
+        </div>
+        {/* Heading and Description */}
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-2">Apa kata pengguna kami?</h1>
+          <p className="text-gray-500 mb-8">
+            Lihat bagaimana POS Laundry telah membantu para pemilik laundry{" "}
+            <br />
+            mengelola bisnis mereka dengan lebih efisien dan efektif.
+          </p>
+        </div>
       </div>
 
-      <div className="container">
-        <h1 className="text-4xl font-bold mb-2 text-center">
-          Apa kata pengguna kami?
-        </h1>
-        <p className="text-gray-500 text-center mb-8">
-          Lihat bagaimana POS Laundry telah membantu para pemilik laundry
-          mengelola bisnis mereka dengan lebih efisien dan efektif.
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+      {/* Testimonial Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-card p-4 rounded-lg shadow bg-gray-100">
+          <div key={index} className="bg-white p-4 rounded-lg shadow-md">
             <div className="flex items-center mb-2">
-              <Avatar src={testimonial.avatar} alt={`${testimonial.name} avatar`} />
+              <Avatar
+                src={testimonial.avatar}
+                alt={`${testimonial.name} avatar`}
+              />
               <div>
-                <p className="text-card-foreground font-semibold">
-                  {testimonial.name}
-                </p>
+                <p className="font-semibold">{testimonial.name}</p>
               </div>
             </div>
-            <p className="text-muted-foreground">{testimonial.text}</p>
+            <p className="text-gray-700">{testimonial.text}</p>
           </div>
         ))}
       </div>
