@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import list from "../assets/icons/list.svg";
 import check from "../assets/icons/check-contained.svg";
+import doubleStar from "../assets/icons/double-star.svg";
 
 const packages = [
   {
@@ -40,8 +41,11 @@ const Package = ({ duration, price, benefits, bestValue }) => {
   return (
     <div className="border border-border rounded-lg p-6 relative">
       {bestValue && (
-        <div className="absolute top-0 right-0 py-1 px-3 rounded-bl-lg">
-          Paling Hemat
+        <div className="inline-flex items-center mb-4 border-2 bg-orange-400 rounded-full p-2">
+          <img src={doubleStar} alt="double star icon" className="w-5 h-5" />
+          <span className="px-2 rounded-full font-semibold text-white">
+            Paling Hemat
+          </span>
         </div>
       )}
       <div className="container border-3 border-black p-4">
