@@ -13,7 +13,7 @@ const Feature = () => {
       id="fitur"
     >
       {/* Top section */}
-      <div className="container text-center w-1/2">
+      <div className="text-center w-full max-w-2xl mb-8">
         {/* Tag Feature */}
         <div className="inline-flex items-center mb-4 border-2 border-blue-500 rounded-full p-2">
           <img src={star} alt="star icon" className="w-6 h-6 text-blue-500" />
@@ -22,22 +22,20 @@ const Feature = () => {
           </span>
         </div>
         {/* Title and description */}
-        <div className="text-center">
-          <h1 className="text-4xl font-bold mb-2">
-            Semua kebutuhan kini tersedia dalam satu genggaman
-          </h1>
-          <p className="text-gray-500 mb-8">
-            Dengan POS Laundry, Anda bisa mengelola semua aspek bisnis laundry
-            Anda, mulai dari order hingga keuangan, langsung dari satu aplikasi
-          </p>
-        </div>
+        <h1 className="text-4xl font-bold mb-2">
+          Semua kebutuhan kini tersedia dalam satu genggaman
+        </h1>
+        <p className="text-gray-500">
+          Dengan POS Laundry, Anda bisa mengelola semua aspek bisnis laundry
+          Anda, mulai dari order hingga keuangan, langsung dari satu aplikasi.
+        </p>
       </div>
 
       {/* Feature cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 gap-6 max-w-7xl w-full md:grid-cols-2">
         {/* Manajemen Pesanan */}
-        <div className="col-span-2 md:col-span-2 flex flex-col md:flex-row p-6 rounded-lg shadow">
-          <div className="p-3 rounded-full bg-white mb-4 md:mb-0 md:mr-4">
+        <div className="col-span-1 md:col-span-2 flex flex-col md:flex-row p-6 bg-gray-100 rounded-lg shadow">
+          <div className="flex-shrink-0 p-3 rounded-full mb-4 md:mb-0 md:mr-4">
             <img alt="order-icon" src={order} className="w-12 h-12" />
           </div>
           <div className="flex-1">
@@ -58,12 +56,12 @@ const Feature = () => {
         </div>
 
         {/* Analitik dan Laporan */}
-        <div className="col-span-1 flex flex-col bg-card p-6 rounded-lg shadow">
+        <div className="col-span-1 flex flex-col bg-gray-100 p-6 rounded-lg shadow">
           <div className="flex items-center mb-4">
             <img alt="analytics-icon" src={statistic} className="w-12 h-12" />
           </div>
           <h2 className="text-xl font-semibold">Analitik dan Laporan</h2>
-          <p className="text-muted-foreground mb-6">
+          <p className="text-gray-500 mb-6">
             Dapatkan wawasan mendalam tentang kinerja bisnis laundry Anda dengan
             fitur analitik dan laporan kami. Pantau keuangan, identifikasi tren,
             dan buat keputusan yang lebih cerdas untuk mengoptimalkan bisnis
@@ -77,7 +75,7 @@ const Feature = () => {
         </div>
 
         {/* Manajemen Pelanggan */}
-        <div className="col-span-1 flex flex-col bg-card p-6 rounded-lg shadow">
+        <div className="col-span-1 flex flex-col bg-gray-100 p-6 rounded-lg shadow">
           <div className="flex items-center mb-4">
             <img
               alt="customer-management-icon"
@@ -86,7 +84,7 @@ const Feature = () => {
             />
           </div>
           <h2 className="text-xl font-semibold">Manajemen Pelanggan</h2>
-          <p className="text-muted-foreground mb-6">
+          <p className="text-gray-500 mb-6">
             Bangun hubungan yang lebih baik dengan pelanggan Anda. POS Laundry
             memudahkan Anda untuk mengelola informasi pelanggan, melacak riwayat
             pesanan, dan memberikan layanan yang lebih personal dan efektif.
