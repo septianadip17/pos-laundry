@@ -8,24 +8,29 @@ import customerManagement from "../assets/images/customer-management.png";
 
 const Feature = () => {
   return (
-    <div className="container flex flex-col items-center mx-auto p-6" id="fitur">
-      {/* Tag Feature */}
-      <div className="flex items-center mb-4 border-2 border-blue-500 rounded-full p-2">
-        <img src={star} alt="star icon" className="w-6 h-6 text-blue-500" />
-        <span className="px-2 rounded-full font-semibold text-blue-500">
-          Fitur
-        </span>
-      </div>
-
-      {/* Title and description */}
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-2">
-          Semua kebutuhan kini tersedia dalam satu genggaman
-        </h1>
-        <p className="text-gray-500 mb-8">
-          Dengan POS Laundry, Anda bisa mengelola semua aspek bisnis laundry
-          Anda, mulai dari order hingga keuangan, langsung dari satu aplikasi
-        </p>
+    <div
+      className="container flex flex-col items-center mx-auto p-6"
+      id="fitur"
+    >
+      {/* Top section */}
+      <div className="container text-center w-1/2">
+        {/* Tag Feature */}
+        <div className="inline-flex items-center mb-4 border-2 border-blue-500 rounded-full p-2">
+          <img src={star} alt="star icon" className="w-6 h-6 text-blue-500" />
+          <span className="px-2 rounded-full font-semibold text-blue-500">
+            Fitur
+          </span>
+        </div>
+        {/* Title and description */}
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-2">
+            Semua kebutuhan kini tersedia dalam satu genggaman
+          </h1>
+          <p className="text-gray-500 mb-8">
+            Dengan POS Laundry, Anda bisa mengelola semua aspek bisnis laundry
+            Anda, mulai dari order hingga keuangan, langsung dari satu aplikasi
+          </p>
+        </div>
       </div>
 
       {/* Feature cards */}
