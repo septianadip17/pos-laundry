@@ -26,6 +26,7 @@ const Download = () => {
         <p className="font-medium mb-4 text-white">
           POS Laundry by LaundryAku.com
         </p>
+        {/* buttons store */}
         <div className="flex space-x-4">
           <a
             href="#"
