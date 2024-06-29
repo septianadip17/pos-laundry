@@ -85,11 +85,11 @@ const Testimonial = () => {
           </div>
         </div>
         {/* Heading and Description */}
-        <div className="text-center">
+        <div className="w-1/2 text-center">
           <h1 className="text-4xl font-bold mb-2">Apa kata pengguna kami?</h1>
           <p className="text-gray-500 mb-8">
             Lihat bagaimana POS Laundry telah membantu para pemilik laundry{" "}
-            <br />
+          
             mengelola bisnis mereka dengan lebih efisien dan efektif.
           </p>
         </div>
