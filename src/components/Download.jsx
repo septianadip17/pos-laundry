@@ -5,11 +5,10 @@ import illustrationMockup from "../assets/images/illustration-mockup.png";
 
 const Download = () => {
   return (
-    <div className="container mx-auto p-6 rounded-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 bg-blue-400">
-      
+    <div className="container mx-auto px-16 rounded-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 bg-blue-400">
       {/* Left Content */}
-      <div className="flex-1">
-        <div className="inline-flex items-center mb-4 border-2 border-white rounded-full p-2">
+      <div className="flex-1 text-center md:text-left">
+        <div className="inline-flex items-center mb-4 border-2 border-white rounded-full p-2 mx-auto md:mx-0">
           <img
             src={heartIcon}
             alt="heart icon"
@@ -20,14 +19,13 @@ const Download = () => {
           </span>
         </div>
         <h1 className="text-4xl md:text-3xl font-semibold mb-2 text-white">
-          Kelola bisnis laundry anda <br /> dengan segala kemudahan <br />{" "}
-          dengan POS Laundry
+          Kelola bisnis laundry anda dengan segala kemudahan dengan POS Laundry
         </h1>
         <p className="font-medium mb-4 text-white">
           POS Laundry by LaundryAku.com
         </p>
         {/* buttons store */}
-        <div className="flex space-x-4">
+        <div className="flex justify-center md:justify-start space-x-4">
           <a
             href="#"
             className="bg-white text-black py-2 px-4 rounded-full flex items-center space-x-2 hover:bg-blue-500 hover:text-white"
@@ -46,7 +44,7 @@ const Download = () => {
       </div>
 
       {/* Right Content */}
-      <div className="flex-1 flex justify-end">
+      <div className="flex-1 flex justify-center md:justify-end">
         <img
           src={illustrationMockup}
           alt="Mobile App Screenshot"
