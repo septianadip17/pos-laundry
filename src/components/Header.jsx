@@ -22,17 +22,17 @@ const Header = () => {
         </p>
 
         {/* buttons store*/}
-        <h1 className="text-1xl text-center md:text-left">
+        <h1 className="text-1xl text-center md:text-left font-semibold">
           Download Aplikasi:
         </h1>
         <div className="flex justify-center md:justify-start space-x-4">
-          <button className="px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-blue-500 hover:text-whitee">
+          <button className="px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-blue-500 hover:text-white">
             <img src={playstore} alt="Playstore icon" className="w-6" />
-            <span>Playstore</span>
+            <span className="font-semibold">Playstore</span>
           </button>
           <button className="px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-blue-500 hover:text-white">
             <img src={appstore} alt="App Store icon" className="w-6" />
-            <span>App Store</span>
+            <span className="font-semibold">App Store</span>
           </button>
         </div>
 
