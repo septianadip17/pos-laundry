@@ -7,19 +7,19 @@ const Header = () => {
     <div className="container bg-gray-100 mx-auto flex flex-col md:flex-row items-center p-6 space-y-6 md:space-y-0 md:space-x-12">
       {/* Left Content */}
       <div className="md:w-1/2 space-y-6">
-        <h1 className="text-3xl md:text-5xl lg:text-7xl font-semibold text-center md:text-left">
+        <h1 className="text-6xl md:text-7xl lg:text7xl font-semibold text-start md:text-left">
           Kelola Bisnis Laundry Anda dengan
           <span className="inline-block px-1 bg-blue-500 text-white rounded-lg">
             Mudah
           </span>
         </h1>
-        <p className="text-center md:text-left text-gray-500">
+        <p className="text-start md:text-left text-gray-500">
           POS Laundry mempermudah Anda dalam mengelola order, keuangan, dan
           mengatur bisnis secara efisien. Semua yang Anda butuhkan dalam satu
           aplikasi praktis.
         </p>
         {/* Download Buttons */}
-        <h1 className="text-xl text-center md:text-left font-semibold">
+        <h1 className="text-xl text-start md:text-left font-semibold">
           Download Aplikasi:
         </h1>
         <div className="flex justify-center md:justify-start space-x-4">
