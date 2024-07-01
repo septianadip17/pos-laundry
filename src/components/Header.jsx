@@ -4,7 +4,7 @@ import illustration from "../assets/images/illustration.png";
 
 const Header = () => {
   return (
-    <div className="container bg-gray-100 mx-auto flex flex-col md:flex-row items-center p-6 space-y-6 md:space-y-0 md:space-x-12">
+    <div id="home" className="container bg-gray-100 mx-auto flex flex-col md:flex-row items-center p-6 space-y-6 md:space-y-0 md:space-x-12">
       {/* Left Content */}
       <div className="md:w-1/2 space-y-6">
         <h1 className="text-6xl md:text-7xl lg:text7xl font-semibold text-start md:text-left">
