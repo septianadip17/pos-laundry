@@ -2,13 +2,24 @@ import heartIcon from "../assets/icons/heart.svg";
 import playstoreIcon from "../assets/images/playstore.png";
 import appstoreIcon from "../assets/images/appstore.png";
 import illustrationMockup from "../assets/images/illustration-mockup.png";
+import bgBanner from "../assets/images/bg-bottom-banner-raw.png";
 
 const Download = () => {
   return (
-    <div className="container mx-auto px-16 rounded-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 bg-blue-400">
+    <div
+      className="container mx-auto px-16 rounded-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6"
+      style={{
+        backgroundImage: `url(${bgBanner})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        width: "95%",
+        minHeight: "40vh",
+      }}
+    >
       {/* Left Content */}
       <div className="flex-1 text-center md:text-left">
-        <div className="inline-flex items-center mb-4 border-2 border-white rounded-full p-2 mx-auto md:mx-0">
+        <div className="inline-flex items-center mb-4 border-2 mt-5 border-white rounded-full p-2 mx-auto md:mx-0">
           <img
             src={heartIcon}
             alt="heart icon"
