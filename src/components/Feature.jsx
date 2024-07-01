@@ -33,6 +33,7 @@ const Feature = () => {
 
       {/* Feature cards */}
       <div className="grid grid-cols-1 gap-6 max-w-7xl w-full md:grid-cols-2">
+        
         {/* Manajemen Pesanan */}
         <div className="col-span-1 md:col-span-2 flex flex-col md:flex-row p-6 bg-gray-100 rounded-lg shadow">
           <div className="flex-shrink-0 p-3 rounded-full mb-4 md:mb-0 md:mr-4">
@@ -46,7 +47,7 @@ const Feature = () => {
               cepat, memastikan kepuasan pelanggan dan operasional yang lancar.
             </p>
           </div>
-          <div className="flex-shrink-0 md:ml-4">
+          <div className="flex-shrink-0 md:ml-4 ">
             <img
               src={orderManagement}
               alt="order-management-screenshot"
@@ -67,11 +68,13 @@ const Feature = () => {
             dan buat keputusan yang lebih cerdas untuk mengoptimalkan bisnis
             Anda.
           </p>
-          <img
-            src={analyticsReport}
-            alt="analytics-screenshot"
-            className="w-96 flex align-center rounded-lg shadow"
-          />
+          <div className="text-center flex align-center">
+            <img
+              src={analyticsReport}
+              alt="analytics-screenshot"
+              className="w-96 flex align-center rounded-lg shadow"
+            />
+          </div>
         </div>
 
         {/* Manajemen Pelanggan */}
@@ -89,12 +92,15 @@ const Feature = () => {
             memudahkan Anda untuk mengelola informasi pelanggan, melacak riwayat
             pesanan, dan memberikan layanan yang lebih personal dan efektif.
           </p>
-          <img
-            src={customerManagement}
-            alt="customer-management-screenshot"
-            className="w-96 rounded-lg shadow"
-          />
+          <div className="text-center flex align-center">
+            <img
+              src={customerManagement}
+              alt="customer-management-screenshot"
+              className="w-96 rounded-lg shadow"
+            />
+          </div>
         </div>
+        
       </div>
     </div>
   );
