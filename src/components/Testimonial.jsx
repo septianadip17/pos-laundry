@@ -9,6 +9,7 @@ import antonie from "../assets/testimoner/antonie.png";
 import syakirah from "../assets/testimoner/syakirah.png";
 import andreaBostanica from "../assets/testimoner/andrea-bostanica.png";
 import hansenLoe from "../assets/testimoner/hansen-loe.png";
+import Tag from "../props/Tag";
 
 const testimonials = [
   {
@@ -69,8 +70,15 @@ Avatar.propTypes = {
 
 const Testimonial = () => {
   return (
-    <div className="container mx-auto p-6" id="testimoni">
-      {/* Testimonial Tag */}
+    <div className="container flex flex-col items-center mx-auto p-6" id="testimoni">
+      <Tag 
+        icon={testimonialIcon}  
+        alt="testimoni icon"
+        tag="Testimonial" 
+        title="Apa kata pengguna kami?" 
+        desc="Lihat bagaimana POS Laundry telah membantu para pemilik laundry mengelola bisnis mereka dengan lebih efisien dan efektif."
+      />
+      {/* Testimonial Tag
       <div className="flex flex-col items-center">
         <div className="flex justify-center items-center mb-4">
           <div className="inline-flex items-center border-2 border-blue-500 rounded-full p-2">
@@ -85,15 +93,13 @@ const Testimonial = () => {
           </div>
         </div>
         {/* Heading and Description */}
-        <div className="w-1/2 text-center">
+        {/* <div className="w-1/2 text-center">
           <h1 className="text-4xl font-bold mb-2">Apa kata pengguna kami?</h1>
           <p className="text-gray-500 mb-8">
-            Lihat bagaimana POS Laundry telah membantu para pemilik laundry{" "}
-          
-            mengelola bisnis mereka dengan lebih efisien dan efektif.
+            Lihat bagaimana POS Laundry telah membantu para pemilik laundry mengelola bisnis mereka dengan lebih efisien dan efektif.
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* Testimonial Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

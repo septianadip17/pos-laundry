@@ -5,6 +5,7 @@ import customer from "../assets/images/customer.png";
 import orderManagement from "../assets/images/order-management.png";
 import analyticsReport from "../assets/images/analytic-and-report.png";
 import customerManagement from "../assets/images/customer-management.png";
+import Tag from "../props/Tag";
 
 const Feature = () => {
   return (
@@ -12,28 +13,16 @@ const Feature = () => {
       className="container flex flex-col items-center mx-auto p-6"
       id="fitur"
     >
-      {/* Top section */}
-      <div className="text-center w-full max-w-2xl mb-8">
-        {/* Tag Feature */}
-        <div className="inline-flex items-center mb-4 border-2 border-blue-500 rounded-full p-2">
-          <img src={star} alt="star icon" className="w-6 h-6 text-blue-500" />
-          <span className="px-2 rounded-full font-semibold text-blue-500">
-            Fitur
-          </span>
-        </div>
-        {/* Title and description */}
-        <h1 className="text-4xl font-bold mb-2">
-          Semua kebutuhan kini tersedia dalam satu genggaman
-        </h1>
-        <p className="text-gray-500">
-          Dengan POS Laundry, Anda bisa mengelola semua aspek bisnis laundry
-          Anda, mulai dari order hingga keuangan, langsung dari satu aplikasi.
-        </p>
-      </div>
+      <Tag
+        icon={star}
+        alt="star icon"
+        tag="Fitur"
+        title="Semua kebutuhan kini tersedia dalam satu genggaman"
+        desc="Dengan POS Laundry, Anda bisa mengelola semua aspek bisnis laundry Anda, mulai dari order hingga keuangan, langsung dari satu aplikasi."
+      />
 
       {/* Feature cards */}
       <div className="grid grid-cols-1 gap-6 max-w-7xl w-full md:grid-cols-2">
-        
         {/* Manajemen Pesanan */}
         <div className="col-span-1 md:col-span-2 flex flex-col md:flex-row p-6 bg-gray-100 rounded-lg shadow">
           <div className="flex-shrink-0 p-3 rounded-full mb-4 md:mb-0 md:mr-4">
@@ -100,7 +89,6 @@ const Feature = () => {
             />
           </div>
         </div>
-        
       </div>
     </div>
   );
