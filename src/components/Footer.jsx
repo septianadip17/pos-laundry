@@ -1,4 +1,4 @@
-import logo from "../assets/images/laundry-logo.svg";
+import logo from "../assets/icons/laundry-logo.svg";
 import facebook from "../assets/icons/facebook.svg";
 import instagram from "../assets/icons/instagram.svg";
 import youtube from "../assets/icons/youtube.svg";
