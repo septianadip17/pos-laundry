@@ -56,7 +56,7 @@ const Navbar = () => {
     >
       {({ open }) => (
         <>
-          <div className="container mx-auto">
+          <div className="container mx-auto px-4">
             <div className="relative flex items-center justify-between h-16">
               <div className="flex items-center">
                 <img
@@ -70,7 +70,7 @@ const Navbar = () => {
                 <h2 className="font-bold text-2xl ml-2">Laundry</h2>
               </div>
 
-              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-start sm:hidden">
                 {/* Mobile menu button */}
                 <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
