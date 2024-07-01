@@ -9,10 +9,12 @@ import demoIcon from "../assets/icons/play-circle.svg";
 import { useEffect, useState } from "react";
 
 const navigation = [
+  { name: "Produk", href: "#home", current: false },
   { name: "Solusi", href: "#solusi", current: false },
   { name: "Fitur", href: "#fitur", current: false },
   { name: "Harga", href: "#harga", current: false },
   { name: "Testimoni", href: "#testimoni", current: false },
+  { name: "Download", href: "#download", current: false },
 ];
 
 function classNames(...classes) {

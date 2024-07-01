@@ -6,7 +6,7 @@ import bgBanner from "../assets/images/bg-bottom-banner-raw.png";
 
 const Download = () => {
   return (
-    <div
+    <div id="download"
       className="container mx-auto px-16 rounded-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6"
       style={{
         backgroundImage: `url(${bgBanner})`,
