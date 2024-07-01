@@ -50,7 +50,7 @@ const Feature = () => {
             <img
               src={orderManagement}
               alt="order-management-screenshot"
-              className="w-full rounded-lg shadow"
+              className="w-96 rounded-lg shadow"
             />
           </div>
         </div>
@@ -70,7 +70,7 @@ const Feature = () => {
           <img
             src={analyticsReport}
             alt="analytics-screenshot"
-            className="w-full rounded-lg shadow"
+            className="w-96 flex align-center rounded-lg shadow"
           />
         </div>
 
@@ -92,7 +92,7 @@ const Feature = () => {
           <img
             src={customerManagement}
             alt="customer-management-screenshot"
-            className="w-full rounded-lg shadow"
+            className="w-96 rounded-lg shadow"
           />
         </div>
       </div>
