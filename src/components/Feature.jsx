@@ -40,7 +40,7 @@ const Feature = () => {
           </div>
           <div className="flex-1">
             <h2 className="text-xl font-semibold mb-2">Manajemen Pesanan</h2>
-            <p className="mb-4">
+            <p className="mb-4 text-gray-500 text-justify">
               Kelola semua pesanan laundry dengan mudah dan efisien. Dengan POS
               Laundry, Anda bisa melacak, mengatur, dan memproses pesanan dengan
               cepat, memastikan kepuasan pelanggan dan operasional yang lancar.
@@ -61,7 +61,7 @@ const Feature = () => {
             <img alt="analytics-icon" src={statistic} className="w-12 h-12" />
           </div>
           <h2 className="text-xl font-semibold">Analitik dan Laporan</h2>
-          <p className="text-gray-500 mb-6">
+          <p className="text-gray-500 mb-6 text-justify">
             Dapatkan wawasan mendalam tentang kinerja bisnis laundry Anda dengan
             fitur analitik dan laporan kami. Pantau keuangan, identifikasi tren,
             dan buat keputusan yang lebih cerdas untuk mengoptimalkan bisnis
@@ -84,7 +84,7 @@ const Feature = () => {
             />
           </div>
           <h2 className="text-xl font-semibold">Manajemen Pelanggan</h2>
-          <p className="text-gray-500 mb-6">
+          <p className="text-gray-500 mb-6 text-justify">
             Bangun hubungan yang lebih baik dengan pelanggan Anda. POS Laundry
             memudahkan Anda untuk mengelola informasi pelanggan, melacak riwayat
             pesanan, dan memberikan layanan yang lebih personal dan efektif.
