@@ -86,8 +86,8 @@ const Price = () => {
       id="harga"
     >
       {/* Tag Price */}
-      <div className="flex flex-col items-center w-full max-w-2xl text-center mb-8">
-        <div className="inline-flex items-center mb-4 border-2 border-blue-500 rounded-full p-2">
+      <div className="flex flex-col items-center w-full max-w-2xl text-center mb-2">
+        <div className="inline-flex items-center mb-2 border-2 border-blue-500 rounded-full p-2">
           <img
             src={list}
             alt="speaker icon"
