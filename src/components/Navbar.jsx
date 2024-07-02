@@ -70,9 +70,9 @@ const Navbar = () => {
                 <h2 className="font-bold text-2xl ml-2">Laundry</h2>
               </div>
 
-              <div className="absolute inset-y-0 right-0 flex items-start sm:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-start md:hidden">
                 {/* Mobile menu button */}
-                <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition duration-300 ease-in-out">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -82,7 +82,7 @@ const Navbar = () => {
                 </DisclosureButton>
               </div>
 
-              <div className="hidden sm:flex sm:items-center sm:ml-6">
+              <div className="hidden md:flex md:items-center md:ml-6">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
                     <a
@@ -95,7 +95,7 @@ const Navbar = () => {
                         item.current
                           ? "bg-gray-900 text-white"
                           : "text-black hover:bg-blue-500 hover:text-white",
-                        "rounded-md px-3 py-2 text-sm font-medium"
+                        "rounded-md px-3 py-2 text-sm font-medium transition duration-300 ease-in-out"
                       )}
                       aria-current={item.current ? "page" : undefined}
                     >
@@ -105,7 +105,7 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <div className="hidden sm:flex sm:items-center items-end">
+              <div className="hidden md:flex md:items-center items-end">
                 {/* Demo Aplikasi */}
                 <button
                   type="button"
@@ -125,27 +125,45 @@ const Navbar = () => {
             </div>
           </div>
 
-          <DisclosurePanel className="sm:hidden">
+          <DisclosurePanel className="md:hidden transition duration-300 ease-in-out">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <DisclosureButton
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  onClick={() => {
-                    closeMobileMenu();
-                  }}
-                  className={classNames(
-                    item.current
-                      ? "bg-blue-900 text-white"
-                      : "text-black hover:bg-blue-700 hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium"
+              {navigation.map((item, index) => (
+                <div key={item.name}>
+                  <DisclosureButton
+                    as="a"
+                    href={item.href}
+                    onClick={() => {
+                      closeMobileMenu();
+                    }}
+                    className={classNames(
+                      item.current
+                        ? "bg-blue-900 text-white"
+                        : "text-black hover:bg-blue-700 hover:text-white",
+                      "block rounded-md px-3 py-2 text-base font-medium transition duration-300 ease-in-out"
+                    )}
+                    aria-current={item.current ? "page" : undefined}
+                  >
+                    {item.name}
+                  </DisclosureButton>
+                  {index === navigation.length - 1 && (
+                    <hr className="my-2 border-gray-300" />
                   )}
-                  aria-current={item.current ? "page" : undefined}
-                >
-                  {item.name}
-                </DisclosureButton>
+                </div>
               ))}
+              <button
+                type="button"
+                className="relative flex items-center rounded-full p-2 text-black transition duration-300 ease-in-out hover:text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 w-full "
+              >
+                <span className="sr-only border-2">Demo Aplikasi</span>
+                <img
+                  src={demoIcon}
+                  alt="demo icon"
+                  className="h-6 w-6 transition duration-300 ease-in-out transform hover:scale-110"
+                />
+                <h2 className="text-sm font-medium ml-2 transition duration-300 ease-in-out transform hover:scale-110">
+                  Demo Aplikasi
+                </h2>
+              </button>
             </div>
           </DisclosurePanel>
         </>
