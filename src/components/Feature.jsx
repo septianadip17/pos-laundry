@@ -24,64 +24,75 @@ const Feature = () => {
       {/* Feature cards */}
       <div className="grid grid-cols-1 gap-6 max-w-7xl w-full md:grid-cols-2">
         {/* Manajemen Pesanan */}
-        <div className="col-span-1 md:col-span-2 flex flex-col md:flex-row p-6 bg-gray-100 rounded-lg shadow">
-          <div className="flex-shrink-0 p-3 rounded-full mb-4 md:mb-0 md:mr-4">
-            <img alt="order-icon" src={order} className="w-12 h-12" />
-          </div>
-          <div className="flex-1">
-            <h2 className="text-xl font-semibold mb-2">Manajemen Pesanan</h2>
-            <p className="mb-4 text-gray-500 text-justify">
-              Kelola semua pesanan laundry dengan mudah dan efisien. Dengan POS
-              Laundry, Anda bisa melacak, mengatur, dan memproses pesanan dengan
-              cepat, memastikan kepuasan pelanggan dan operasional yang lancar.
-            </p>
-          </div>
-          <div className="flex-shrink-0 md:ml-4 ">
-            <img
-              src={orderManagement}
-              alt="order-management-screenshot"
-              className="w-96 rounded-lg shadow"
-            />
+        <div className="col-span-1 md:col-span-2 flex flex-col p-6 bg-gray-100 rounded-lg shadow">
+          <div className="flex flex-col items-center md:flex-row md:items-start">
+            <div className="flex flex-col items-center p-3 rounded-full mb-4 md:mb-0 md:mr-4">
+              <img
+                alt="order-icon"
+                src={order}
+                className="w-12 h-12 md:order-first md:mb-4"
+              />
+            </div>
+            <div className="flex-1 text-center md:text-left">
+              <h2 className="text-xl font-semibold mb-2">Manajemen Pesanan</h2>
+              <p className="mb-4 text-gray-500 w-96">
+                Kelola semua pesanan laundry dengan mudah dan efisien. Dengan
+                POS Laundry, Anda bisa melacak, mengatur, dan memproses pesanan
+                dengan cepat, memastikan kepuasan pelanggan dan operasional yang
+                lancar.
+              </p>
+            </div>
+            <div className="flex-shrink-0 md:ml-4 flex justify-center">
+              <img
+                src={orderManagement}
+                alt="order-management-screenshot"
+                className="w-96 rounded-lg shadow"
+              />
+            </div>
           </div>
         </div>
 
         {/* Analitik dan Laporan */}
         <div className="col-span-1 flex flex-col bg-gray-100 p-6 rounded-lg shadow">
-          <div className="flex items-center mb-4">
+          <div className="flex flex-col items-center mb-4 md:items-start">
             <img alt="analytics-icon" src={statistic} className="w-12 h-12" />
           </div>
-          <h2 className="text-xl font-semibold">Analitik dan Laporan</h2>
+          <h2 className="text-xl font-semibold text-center md:text-left">
+            Analitik dan Laporan
+          </h2>
           <p className="text-gray-500 mb-6 text-justify">
             Dapatkan wawasan mendalam tentang kinerja bisnis laundry Anda dengan
             fitur analitik dan laporan kami. Pantau keuangan, identifikasi tren,
             dan buat keputusan yang lebih cerdas untuk mengoptimalkan bisnis
             Anda.
           </p>
-          <div className="text-center flex align-center">
+          <div className="text-center flex justify-center md:justify-start">
             <img
               src={analyticsReport}
               alt="analytics-screenshot"
-              className="w-96 flex align-center rounded-lg shadow"
+              className="w-96 rounded-lg shadow"
             />
           </div>
         </div>
 
         {/* Manajemen Pelanggan */}
         <div className="col-span-1 flex flex-col bg-gray-100 p-6 rounded-lg shadow">
-          <div className="flex items-center mb-4">
+          <div className="flex flex-col items-center mb-4 md:items-start">
             <img
               alt="customer-management-icon"
               src={customer}
               className="w-12 h-12"
             />
           </div>
-          <h2 className="text-xl font-semibold">Manajemen Pelanggan</h2>
+          <h2 className="text-xl font-semibold text-center md:text-left">
+            Manajemen Pelanggan
+          </h2>
           <p className="text-gray-500 mb-6 text-justify">
             Bangun hubungan yang lebih baik dengan pelanggan Anda. POS Laundry
             memudahkan Anda untuk mengelola informasi pelanggan, melacak riwayat
             pesanan, dan memberikan layanan yang lebih personal dan efektif.
           </p>
-          <div className="text-center flex align-center">
+          <div className="text-center flex justify-center md:justify-start">
             <img
               src={customerManagement}
               alt="customer-management-screenshot"
