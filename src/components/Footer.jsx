@@ -78,10 +78,10 @@ const Footer = () => {
           <div className="flex-2 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-5">
             {Object.entries(links).map(([key, section]) => (
               <div key={key}>
-                <h3 className="font-semibold text-center">{section.title}</h3>
+                <h3 className="font-semibold">{section.title}</h3>
                 <ul className="mt-1 space-y-2">
                   {section.items.map((item, index) => (
-                    <li key={index} className="hover:underline text-center text-gray-600">
+                    <li key={index} className="hover:underline text-gray-600">
                       <a
                         href={item.href}
                         target="_blank"
