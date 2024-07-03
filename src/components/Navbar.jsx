@@ -63,7 +63,7 @@ const Navbar = () => {
                 <h2 className="font-bold text-2xl ml-2">Laundry</h2>
               </div>
               <div className="flex items-center space-x-4 md:space-x-6">
-                <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition duration-300 ease-in-out md:hidden">
+                <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 hover:border-2 hover:rounded-full text-black hover:bg-gray-200 hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition duration-300 ease-in-out md:hidden">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
