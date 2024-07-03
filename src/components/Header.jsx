@@ -29,10 +29,10 @@ const Header = () => {
         <div className="flex justify-start lg:justify-start space-x-2">
           <a
             href="#"
-            className="bg-white text-black py-2 px-3 rounded-full flex items-center space-x-2 hover:bg-blue-500 hover:text-white shadow-xl"
+            className="bg-white text-black p-4 rounded-full flex items-center space-x-2 hover:bg-blue-500 hover:text-white shadow-xl"
           >
             <img src={playstore} alt="Playstore" className="w-10 h-10" />
-            <span className="font-medium text-2xl">Playstore</span>
+            <span className="font-normal text-2xl">Playstore</span>
           </a>
           {/* Button Download Store */}
           <a
@@ -40,7 +40,7 @@ const Header = () => {
             className="bg-white text-black py-2 px-4 rounded-full flex items-center space-x-2 hover:bg-blue-500 hover:text-white shadow-xl"
           >
             <img src={appstore} alt="App Store" className="w-10 h-10" />
-            <span className="font-medium text-2xl">App Store</span>
+            <span className="font-normal text-2xl">App Store</span>
           </a>
         </div>
         {/* Statistics */}
