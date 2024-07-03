@@ -6,17 +6,17 @@ const Header = () => {
   return (
     <div
       id="home"
-      className="container bg-gray-100 mx-auto flex flex-col lg:flex-row items-center p-6 space-y-6 lg:space-y-0 lg:space-x-12"
+      className="container bg-gray-100 mx-auto flex flex-col lg:flex-row items-center px-4 space-y-2 lg:space-y-0 lg:space-x-12"
     >
       {/* Left Content */}
       <div className="lg:w-1/2 space-y-6">
-        <h1 className="text-7xl lg:text-7xl font-semibold text-start lg:text-left">
+        <h1 className="text-7xl lg:text-7xl font-semibold text-start space-x-2 lg:text-left">
           Kelola Bisnis Laundry Anda dengan
-          <span className="inline-block px-1 bg-blue-500 text-white rounded-lg">
+          <span className="inline-block px-4 py-1 bg-blue-500 text-white rounded-3xl">
             Mudah
           </span>
         </h1>
-        <p className="text-start lg:text-left text-gray-600">
+        <p className="text-start text-lg lg:text-left text-gray-600 ">
           POS Laundry mempermudah Anda dalam mengelola order, keuangan, dan
           mengatur bisnis secara efisien. Semua yang Anda butuhkan dalam satu
           aplikasi praktis.
