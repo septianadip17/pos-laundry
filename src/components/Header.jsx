@@ -1,15 +1,29 @@
 import appstore from "../assets/images/appstore.png";
 import playstore from "../assets/images/playstore.png";
 import illustration from "../assets/images/illustration.png";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Header = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      delay: 0,
+      duration: 1000,
+      easing: "ease",
+      once: true,
+      mirror: false,
+    });
+  }, []);
+
   return (
     <div
       className="container mx-auto bg-gray-100 flex flex-col lg:flex-row items-center px-4 lg:space-x-12 lg:space-y-0 space-y-2"
       id="home"
     >
       {/* Left Content */}
-      <div className="lg:w-1/2 space-y-6">
+      <div className="lg:w-1/2 space-y-6" data-aos="fade-right">
         {/* Main Title */}
         <h1 className="text-7xl font-semibold text-start lg:text-left">
           Kelola Bisnis Laundry Anda dengan
@@ -30,6 +44,7 @@ const Header = () => {
           <a
             href="#"
             className="bg-white text-black p-4 rounded-full flex items-center space-x-2 hover:bg-blue-500 hover:text-white shadow-xl"
+            data-aos="zoom-in"
           >
             <img src={playstore} alt="Playstore" className="w-10 h-10" />
             <span className="font-normal text-2xl">Playstore</span>
@@ -38,6 +53,7 @@ const Header = () => {
           <a
             href="#"
             className="bg-white text-black py-2 px-4 rounded-full flex items-center space-x-2 hover:bg-blue-500 hover:text-white shadow-xl"
+            data-aos="zoom-in"
           >
             <img src={appstore} alt="App Store" className="w-10 h-10" />
             <span className="font-normal text-2xl">App Store</span>
@@ -46,17 +62,17 @@ const Header = () => {
         {/* Statistics */}
         <div className="flex justify-between lg:justify-start space-x-5 mt-4">
           {/* Downloads */}
-          <div className="text-start">
+          <div className="text-start" data-aos="fade-up">
             <p className="text-4xl font-semibold">25K</p>
             <p className="text-gray-700 text-xl">Download</p>
           </div>
           {/* Partner */}
-          <div className="text-start">
+          <div className="text-start" data-aos="fade-up">
             <p className="text-4xl font-semibold">12K</p>
             <p className="text-gray-700 text-xl">Mitra laundry</p>
           </div>
           {/* Rating */}
-          <div className="text-start">
+          <div className="text-start" data-aos="fade-up">
             <p className="text-4xl font-semibold">4.8</p>
             <p className="text-gray-700 text-xl">Rating playstore</p>
           </div>
@@ -64,7 +80,11 @@ const Header = () => {
       </div>
 
       {/* Right Content */}
-      <div className="lg:w-1/2 flex justify-center">
+      <div
+        className="lg:w-1/2 flex justify-center"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
         <img
           src={illustration}
           alt="Phone showing app screenshot"

@@ -10,6 +10,9 @@ import syakirah from "../assets/testimoner/syakirah.png";
 import andreaBostanica from "../assets/testimoner/andrea-bostanica.png";
 import hansenLoe from "../assets/testimoner/hansen-loe.png";
 import Tag from "../props/Tag";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const testimonials = [
   {
@@ -69,42 +72,31 @@ Avatar.propTypes = {
 };
 
 const Testimonial = () => {
+  useEffect(() => {
+    AOS.init(); // Inisialisasi AOS saat komponen dimuat
+  }, []);
+
   return (
-    <div className="container flex flex-col items-center mx-auto p-6" id="testimoni">
-      <Tag 
-        icon={testimonialIcon}  
+    <div
+      className="container flex flex-col items-center mx-auto p-6"
+      id="testimoni"
+    >
+      <Tag
+        icon={testimonialIcon}
         alt="testimoni icon"
-        tag="Testimonial" 
-        title="Apa kata pengguna kami?" 
+        tag="Testimonial"
+        title="Apa kata pengguna kami?"
         desc="Lihat bagaimana POS Laundry telah membantu para pemilik laundry mengelola bisnis mereka dengan lebih efisien dan efektif."
       />
-      {/* Testimonial Tag
-      <div className="flex flex-col items-center">
-        <div className="flex justify-center items-center mb-4">
-          <div className="inline-flex items-center border-2 border-blue-500 rounded-full p-2">
-            <img
-              src={testimonialIcon}
-              alt="testimonial icon"
-              className="w-6 h-6 text-blue-500"
-            />
-            <span className="px-2 rounded-full font-semibold text-blue-500">
-              Testimonial
-            </span>
-          </div>
-        </div>
-        {/* Heading and Description */}
-        {/* <div className="w-1/2 text-center">
-          <h1 className="text-4xl font-bold mb-2">Apa kata pengguna kami?</h1>
-          <p className="text-gray-500 mb-8">
-            Lihat bagaimana POS Laundry telah membantu para pemilik laundry mengelola bisnis mereka dengan lebih efisien dan efektif.
-          </p>
-        </div>
-      </div> */}
 
       {/* Testimonial Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-white p-4 rounded-lg shadow-md">
+          <div
+            key={index}
+            className="bg-white p-4 rounded-lg shadow-md"
+            data-aos="fade-up" // Animasi fade-up saat muncul
+          >
             <div className="flex items-center mb-2">
               <Avatar
                 src={testimonial.avatar}

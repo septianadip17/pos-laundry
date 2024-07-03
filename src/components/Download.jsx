@@ -3,10 +3,18 @@ import playstoreIcon from "../assets/images/playstore.png";
 import appstoreIcon from "../assets/images/appstore.png";
 import illustrationMockup from "../assets/images/illustration-mockup.png";
 import bgBanner from "../assets/images/bg-bottom-banner-raw.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Download = () => {
+  useEffect(() => {
+    AOS.init(); // Inisialisasi AOS saat komponen dimuat
+  }, []);
+
   return (
-    <div id="download"
+    <div
+      id="download"
       className="container mx-auto px-10 rounded-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6"
       style={{
         backgroundImage: `url(${bgBanner})`,
@@ -17,6 +25,7 @@ const Download = () => {
         minHeight: "40vh",
         borderRadius: "30px",
       }}
+      data-aos="fade-up" // Animasi fade-up saat muncul
     >
       {/* Left Content */}
       <div className="flex-1 md:text-left">
@@ -61,6 +70,7 @@ const Download = () => {
           src={illustrationMockup}
           alt="Mobile App Screenshot"
           className="w-full max-w-xs md:max-w-sm"
+          data-aos="fade-left" // Animasi fade-left pada gambar mockup
         />
       </div>
     </div>

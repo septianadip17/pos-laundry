@@ -7,6 +7,9 @@ import orderManagement from "../assets/images/order-management.png";
 import analyticsReport from "../assets/images/analytic-and-report.png";
 import customerManagement from "../assets/images/customer-management.png";
 import Tag from "../props/Tag";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const features = [
   {
@@ -53,6 +56,7 @@ const FeatureCard = ({
 }) => (
   <div
     className={`col-span-1 flex flex-col bg-gray-100 p-6 rounded-lg shadow ${colSpan}`}
+    data-aos="fade-up" // Tambahkan animasi fade-up saat muncul
   >
     <div
       className={`flex flex-col ${
@@ -60,16 +64,24 @@ const FeatureCard = ({
       } md:items-start`}
     >
       <div className={`flex flex-col ${isOrderManagement ? "md:w-1/2" : ""}`}>
-        <img alt={`${title}-icon`} src={icon} className="w-12 h-12 mb-1" /> {/* Icon */}
-        <h2 className="text-4xl my-2 font-semibold md:text-left">{title}</h2> {/* Title */}
-        <p className="text-gray-700 mb-6 text-lg text-justify">{description}</p> {/* Description */}
+        <img alt={`${title}-icon`} src={icon} className="w-12 h-12 mb-1" />{" "}
+        {/* Icon */}
+        <h2 className="text-4xl my-2 font-semibold md:text-left">
+          {title}
+        </h2>{" "}
+        {/* Title */}
+        <p className="text-gray-700 mb-6 text-lg text-justify">
+          {description}
+        </p>{" "}
+        {/* Description */}
       </div>
       <div
         className={`text-center flex justify-center ${
           isOrderManagement ? "md:w-1/2 md:ml-4" : "md:w-full"
         }`}
       >
-        <img src={image} alt={imageAlt} className="w-96 rounded-lg" /> {/* Image */}
+        <img src={image} alt={imageAlt} className="w-96 rounded-lg" />{" "}
+        {/* Image */}
       </div>
     </div>
   </div>
@@ -86,6 +98,10 @@ FeatureCard.propTypes = {
 };
 
 const Feature = () => {
+  useEffect(() => {
+    AOS.init(); // Inisialisasi AOS saat komponen dimuat
+  }, []);
+
   return (
     <div
       className="container flex flex-col items-center mx-auto px-6"
@@ -97,6 +113,7 @@ const Feature = () => {
         tag="Fitur"
         title="Semua kebutuhan kini tersedia dalam satu genggaman"
         desc="Dengan POS Laundry, Anda bisa mengelola semua aspek bisnis laundry Anda, mulai dari order hingga keuangan, langsung dari satu aplikasi."
+        data-aos="fade-up" // Tambahkan animasi fade-up pada Tag
       />
 
       {/* Feature cards */}

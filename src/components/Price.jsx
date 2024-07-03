@@ -3,7 +3,9 @@ import list from "../assets/icons/list.svg";
 import check from "../assets/icons/check-contained.svg";
 import doubleStar from "../assets/icons/double-star.svg";
 import Tag from "../props/Tag";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const packages = [
   {
@@ -40,8 +42,15 @@ const packages = [
 ];
 
 const Package = ({ duration, price, benefits, bestValue }) => {
+  useEffect(() => {
+    AOS.init(); // Inisialisasi AOS saat komponen dimuat
+  }, []);
+
   return (
-    <div className="border border-border rounded-lg p-6 relative">
+    <div
+      className="border border-border rounded-lg p-6 relative"
+      data-aos="fade-up" // Tambahkan animasi fade-up saat muncul
+    >
       {bestValue && (
         <div className="inline-flex items-center mb-4 border-2 bg-orange-400 rounded-full p-2">
           <img src={doubleStar} alt="double star icon" className="w-5 h-5" />
@@ -82,17 +91,22 @@ Package.propTypes = {
 };
 
 const Price = () => {
+  useEffect(() => {
+    AOS.init(); // Inisialisasi AOS saat komponen dimuat
+  }, []);
+
   return (
     <div
       className="container flex flex-col items-center mx-auto p-6"
       id="harga"
     >
-      <Tag 
-        icon={list} 
-        alt="list icon" 
-        tag="Harga" 
-        title="Berlangganan untuk mengakses fitur tanpa batas" 
+      <Tag
+        icon={list}
+        alt="list icon"
+        tag="Harga"
+        title="Berlangganan untuk mengakses fitur tanpa batas"
         desc="Akses semua fitur premium POS Laundry dengan berlangganan. Tingkatkan efisiensi dan optimalkan bisnis laundry Anda sekarang juga."
+        data-aos="fade-up" // Tambahkan animasi fade-up pada Tag
       />
 
       {/* Packages */}
