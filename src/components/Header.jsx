@@ -10,13 +10,13 @@ const Header = () => {
     >
       {/* Left Content */}
       <div className="lg:w-1/2 space-y-6">
-        <h1 className="text-6xl lg:text-7xl font-semibold text-start lg:text-left">
+        <h1 className="text-7xl lg:text-7xl font-semibold text-start lg:text-left">
           Kelola Bisnis Laundry Anda dengan
           <span className="inline-block px-1 bg-blue-500 text-white rounded-lg">
             Mudah
           </span>
         </h1>
-        <p className="text-start lg:text-left text-gray-500">
+        <p className="text-start lg:text-left text-gray-600">
           POS Laundry mempermudah Anda dalam mengelola order, keuangan, dan
           mengatur bisnis secara efisien. Semua yang Anda butuhkan dalam satu
           aplikasi praktis.
@@ -25,35 +25,35 @@ const Header = () => {
         <h1 className="text-xl text-start lg:text-left font-semibold">
           Download Aplikasi:
         </h1>
-        <div className="flex justify-center lg:justify-start space-x-4">
+        <div className="flex justify-start lg:justify-start space-x-2">
           <a
             href="#"
-            className="bg-white text-black py-2 px-4 rounded-full flex items-center space-x-2 hover:bg-blue-500 hover:text-white shadow-xl"
+            className="bg-white text-black py-2 px-3 rounded-full flex items-center space-x-2 hover:bg-blue-500 hover:text-white shadow-xl"
           >
-            <img src={playstore} alt="Playstore" className="w-6 h-6" />
-            <span className="font-semibold">Playstore</span>
+            <img src={playstore} alt="Playstore" className="w-10 h-10" />
+            <span className="font-medium text-2xl">Playstore</span>
           </a>
           <a
             href="#"
             className="bg-white text-black py-2 px-4 rounded-full flex items-center space-x-2 hover:bg-blue-500 hover:text-white shadow-xl"
           >
-            <img src={appstore} alt="App Store" className="w-6 h-6" />
-            <span className="font-semibold">App Store</span>
+            <img src={appstore} alt="App Store" className="w-10 h-10" />
+            <span className="font-medium text-2xl">App Store</span>
           </a>
         </div>
         {/* Statistics */}
-        <div className="flex justify-center lg:justify-start space-x-5 mt-4">
-          <div className="text-center">
-            <p className="text-xl font-bold">25K</p>
-            <p className="text-gray-700">Download</p>
+        <div className="flex justify-between lg:justify-start space-x-5 mt-4">
+          <div className="text-start">
+            <p className="text-4xl font-semibold">25K</p>
+            <p className="text-gray-700 text-xl">Download</p>
           </div>
-          <div className="text-center">
-            <p className="text-xl font-bold">12K</p>
-            <p className="text-gray-700">Mitra laundry</p>
+          <div className="text-start">
+            <p className="text-4xl font-semibold">12K</p>
+            <p className="text-gray-700 text-xl">Mitra laundry</p>
           </div>
-          <div className="text-center">
-            <p className="text-xl font-bold">4.8</p>
-            <p className="text-gray-700">Rating playstore</p>
+          <div className="text-start">
+            <p className="text-4xl font-semibold">4.8</p>
+            <p className="text-gray-700 text-xl">Rating playstore</p>
           </div>
         </div>
       </div>
