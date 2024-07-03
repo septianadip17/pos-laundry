@@ -23,7 +23,7 @@ const Header = () => {
           mengatur bisnis secara efisien. Semua yang Anda butuhkan dalam satu
           aplikasi praktis.
         </p>
-        <h1 className="text-xl font-semibold text-start lg:text-left">
+        <h1 className="text-2xl font-semibold text-start lg:text-left">
           Download Aplikasi:
         </h1>
         <div className="flex justify-start lg:justify-start space-x-2">
