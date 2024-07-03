@@ -60,7 +60,7 @@ const Navbar = () => {
             <div className="relative flex items-center justify-between h-16">
               <div className="flex items-center">
                 <img
-                  className="h-8 w-auto"
+                  className="h-8 w-auto cursor-pointer"
                   src={logo}
                   alt="Laundry Logo"
                   onClick={() => {
@@ -70,20 +70,24 @@ const Navbar = () => {
                 <h2 className="font-bold text-2xl ml-2">Laundry</h2>
               </div>
 
-              <div className="absolute inset-y-0 right-0 flex items-start md:hidden">
+              <div className="flex items-center space-x-4 md:space-x-6">
                 {/* Mobile menu button */}
-                <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition duration-300 ease-in-out">
+                <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition duration-300 ease-in-out md:hidden">
                   <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                  )}
+                  <span
+                    className={`transform transition-transform ${
+                      open ? "rotate-90" : "rotate-0"
+                    }`}
+                  >
+                    {open ? (
+                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                    ) : (
+                      <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    )}
+                  </span>
                 </DisclosureButton>
-              </div>
 
-              <div className="hidden md:flex md:items-center md:ml-6">
-                <div className="flex space-x-4">
+                <div className="hidden md:flex space-x-4">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
@@ -105,7 +109,7 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <div className="hidden md:flex md:items-center items-end">
+              <div className="hidden md:flex md:items-center items-end ml-auto">
                 {/* Demo Aplikasi */}
                 <button
                   type="button"
