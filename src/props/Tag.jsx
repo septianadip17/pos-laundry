@@ -16,7 +16,7 @@ const Tag = (props) => {
       </div>
       {/* Title and description */}
       <h1 className="text-4xl font-bold mb-2">{props.title}</h1>
-      <p className="text-gray-500 text-lg px-2 mb-8">{props.desc}</p>
+      <p className="text-gray-500 text-lg px-2 mb-3">{props.desc}</p>
     </div>
   );
 };
