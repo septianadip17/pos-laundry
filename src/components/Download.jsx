@@ -7,7 +7,7 @@ import bgBanner from "../assets/images/bg-bottom-banner-raw.png";
 const Download = () => {
   return (
     <div id="download"
-      className="container mx-auto px-16 rounded-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6"
+      className="container mx-auto px-10 rounded-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6"
       style={{
         backgroundImage: `url(${bgBanner})`,
         backgroundSize: "cover",
@@ -19,8 +19,8 @@ const Download = () => {
       }}
     >
       {/* Left Content */}
-      <div className="flex-1 text-center md:text-left">
-        <div className="inline-flex items-center mb-4 border-2 mt-5 border-white rounded-full p-2 mx-auto md:mx-0">
+      <div className="flex-1 md:text-left">
+        <div className="inline-flex items-center mb-4 border-2 mt-5 bg-blue-400 border-white rounded-full p-2 mx-auto md:mx-0">
           <img
             src={heartIcon}
             alt="heart icon"
@@ -30,20 +30,20 @@ const Download = () => {
             Mulai Sekarang
           </span>
         </div>
-        <h1 className="text-4xl md:text-3xl font-semibold mb-2 text-white">
+        <h1 className="text-5xl md:text-3xl font-semibold mb-8 text-white">
           Kelola bisnis laundry anda dengan segala kemudahan dengan POS Laundry
         </h1>
-        <p className="font-medium mb-4 text-white">
+        <p className="font-normal text-lg mb-4 text-white">
           POS Laundry by LaundryAku.com
         </p>
         {/* buttons store */}
-        <div className="flex justify-center md:justify-start space-x-4">
+        <div className="flex md:justify-start space-x-4 ">
           <a
             href="#"
-            className="bg-white text-black py-2 px-4 rounded-full flex items-center space-x-2 hover:bg-blue-500 hover:text-white"
+            className="bg-white text-black py-2 px-4 rounded-full flex items-center space-x-2 hover:bg-blue-500 hover:text-white shadow-xl"
           >
             <img src={playstoreIcon} alt="Playstore" className="w-8 h-8" />
-            <span className="font-semibold">Playstore</span>
+            <span className="font-semibold ">Playstore</span>
           </a>
           <a
             href="#"
