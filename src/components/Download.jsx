@@ -15,6 +15,7 @@ const Download = () => {
         backgroundRepeat: "no-repeat",
         width: "95%",
         minHeight: "40vh",
+        borderRadius: "30px",
       }}
     >
       {/* Left Content */}
