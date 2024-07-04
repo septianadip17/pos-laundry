@@ -31,12 +31,12 @@ const Solution = () => {
       {/* Before After Image */}
       <div
         className="w-full max-w-8xl flex flex-col md:flex-row justify-center"
-        data-aos="fade-up"
+        
       >
-        <div className="container flex-col">
+        <div className="container flex-col" data-aos="zoom-in-left">
           <img src={before} alt="before" className="w-full h-auto" />
         </div>
-        <div className="container flex-col">
+        <div className="container flex-col" data-aos="zoom-in-right">
           <img src={after} alt="after" className="w-full h-auto" />
         </div>
       </div>
