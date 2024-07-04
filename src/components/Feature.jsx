@@ -30,7 +30,7 @@ const features = [
     image: analyticsReport,
     imageAlt: "analytics-screenshot",
     colSpan: "",
-    aos: "fade-right",
+    aos: "fade-down-right",
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const features = [
     image: customerManagement,
     imageAlt: "customer-management-screenshot",
     colSpan: "",
-    aos: "fade-left",
+    aos: "fade-up-left",
   },
 ];
 
