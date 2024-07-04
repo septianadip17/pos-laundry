@@ -1,19 +1,7 @@
 import PropTypes from "prop-types";
-import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const Tag = (props) => {
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      delay: 0,
-      duration: 1000,
-      easing: "ease",
-      once: true,
-      mirror: false,
-    });
-  }, []);
 
   return (
     <div
@@ -33,10 +21,10 @@ const Tag = (props) => {
         </span>
       </div>
       {/* Title and description */}
-      <h1 className="text-4xl font-bold mb-2" data-aos="fade-up">
+      <h1 className="text-3xl font-bold mb-2 leading-snug" data-aos="fade-up">
         {props.title}
       </h1>
-      <p className="text-gray-500 text-lg px-2 mb-3" data-aos="fade-up">
+      <p className="text-gray-500 text-sm px-2 mb-3" data-aos="fade-up">
         {props.desc}
       </p>
     </div>
