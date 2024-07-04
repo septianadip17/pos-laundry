@@ -66,8 +66,8 @@ const FeatureCard = ({
     >
       <div className={`flex flex-col ${isOrderManagement ? "md:w-1/2" : ""}`}>
         <img alt={`${title}-icon`} src={icon} className="w-12 h-12 mb-1" />{" "}
-        <h2 className="text-4xl my-2 font-semibold md:text-left">{title}</h2>{" "}
-        <p className="text-gray-700 mb-6 text-lg text-justify">{description}</p>{" "}
+        <h2 className="text-3xl my-2 font-semibold md:text-left">{title}</h2>{" "}
+        <p className="text-gray-61323200 mb-6 text-sm text-justify">{description}</p>{" "}
       </div>
       <div
         className={`text-center flex justify-center ${
