@@ -81,7 +81,7 @@ const Footer = () => {
                 <h3 className="font-semibold">{section.title}</h3>
                 <ul className="mt-1 space-y-2">
                   {section.items.map((item, index) => (
-                    <li key={index} className="hover:underline text-gray-600">
+                    <li key={index} className="hover:underline text-gray-600 mt-2">
                       <a
                         href={item.href}
                         target="_blank"
@@ -97,7 +97,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center mt-6 text-gray-600 mb-10">
+      <div className="text-center text-sm mt-6 text-gray-400 mb-10">
         © Copyright POS Laundry 2024. All Rights Reserved
       </div>
     </>
