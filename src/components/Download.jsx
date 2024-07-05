@@ -3,19 +3,13 @@ import playstoreIcon from "../assets/images/playstore.png";
 import appstoreIcon from "../assets/images/appstore.png";
 import illustrationMockup from "../assets/images/illustration-mockup.png";
 import bgBanner from "../assets/images/bg-bottom-banner-raw.png";
-import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const Download = () => {
-  useEffect(() => {
-    AOS.init(); // Inisialisasi AOS saat komponen dimuat
-  }, []);
-
   return (
     <div
       id="download"
-      className="container mx-auto px-10 rounded-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6"
+      className="container mx-auto px-6 rounded-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6"
       style={{
         backgroundImage: `url(${bgBanner})`,
         backgroundSize: "cover",
@@ -33,13 +27,13 @@ const Download = () => {
           <img
             src={heartIcon}
             alt="heart icon"
-            className="w-6 h-6 text-blue-500"
+            className="w-5 h-5 text-blue-500"
           />
-          <span className="px-2 rounded-full font-semibold text-white">
+          <span className="px-2 rounded-full font-normal text-white">
             Mulai Sekarang
           </span>
         </div>
-        <h1 className="text-5xl md:text-3xl font-semibold mb-8 text-white">
+        <h1 className="text-3xl font-semibold mb-8 text-white leading-tight">
           Kelola bisnis laundry anda dengan segala kemudahan dengan POS Laundry
         </h1>
         <p className="font-normal text-lg mb-4 text-white">
@@ -70,7 +64,7 @@ const Download = () => {
           src={illustrationMockup}
           alt="Mobile App Screenshot"
           className="w-full max-w-xs md:max-w-sm"
-          data-aos="fade-left" // Animasi fade-left pada gambar mockup
+          data-aos="fade-left"
         />
       </div>
     </div>
