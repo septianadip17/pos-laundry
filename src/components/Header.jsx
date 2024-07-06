@@ -38,7 +38,7 @@ const Header = () => {
 
   return (
     <div
-      className="container mx-auto bg-gray-100 flex flex-col lg:flex-row items-center px-4 lg:space-x-12 lg:space-y-0 space-y-2"
+      className="container mx-auto bg-gray-50 flex flex-col lg:flex-row items-center px-4 lg:space-x-12 lg:space-y-0 space-y-2"
       id="home"
     >
       {/* Left Content or Top Content*/}
