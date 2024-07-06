@@ -63,7 +63,7 @@ const Download = () => {
         <img
           src={illustrationMockup}
           alt="Mobile App Screenshot"
-          className="w-full max-w-xs md:max-w-sm"
+          className="w-full md:max-w-sm"
           data-aos="fade-left"
         />
       </div>
