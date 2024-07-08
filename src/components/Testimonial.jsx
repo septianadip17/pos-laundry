@@ -94,7 +94,7 @@ const Testimonial = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-white p-4 rounded-lg shadow-md"
+            className="bg-gray-100 p-4 rounded-lg"
             data-aos="fade-up" // Animasi fade-up saat muncul
           >
             <div className="flex items-center mb-2">
