@@ -56,16 +56,16 @@ const FeatureCard = ({
   isOrderManagement,
 }) => (
   <div
-    className={`col-span-1 flex flex-col bg-gray-100 rounded-lg shadow ${colSpan}`}
+    className={`col-span-1 flex flex-col bg-gray-100 rounded-xl ${colSpan}`}
     data-aos={aos}
   >
     <div
-      className={`flex flex-col ${
+      className={`flex flex-col px-8 ${
         isOrderManagement ? "md:flex-row" : "md:flex-col"
       } md:items-start`}
     >
       <div
-        className={`flex flex-col pt-8 ps-5 ${
+        className={`flex flex-col pt-8 ${
           isOrderManagement ? "md:w-1/2" : ""
         }`}
       >
@@ -76,7 +76,7 @@ const FeatureCard = ({
       <div
         className={`text-center flex justify-center ${
           isOrderManagement
-            ? "md:w-1/2 md:ml-4 pt-5 md:justify-end md:pe-14"
+            ? "md:w-1/2 md:ml-4 pt-5 md:justify-end md:pe-5"
             : "md:w-full"
         }`}
       >
