@@ -65,19 +65,19 @@ const FeatureCard = ({
       } md:items-start`}
     >
       <div
-        className={`flex flex-col pt-5 ps-5 ${
+        className={`flex flex-col pt-8 ps-5 ${
           isOrderManagement ? "md:w-1/2" : ""
         }`}
       >
         <img alt={`${title}-icon`} src={icon} className="w-12 h-12 mb-1" />{" "}
         <h2 className="text-3xl my-2 font-semibold md:text-left">{title}</h2>{" "}
-        <p className="text-gray-500 mb-6 text-sm">{description}</p>{" "}
+        <p className="text-gray-500 mb-6 text-md">{description}</p>{" "}
       </div>
       <div
         className={`text-center flex justify-center ${
           isOrderManagement
-            ? "md:w-1/2 md:ml-4 "
-            : "md:w-full "
+            ? "md:w-1/2 md:ml-4 pt-5 md:justify-end md:pe-14"
+            : "md:w-full"
         }`}
       >
         <img src={image} alt={imageAlt} className="w-80 pt-5 pb-0 rounded-lg" />{" "}
