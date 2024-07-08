@@ -10,9 +10,7 @@ import syakirah from "../assets/testimoner/syakirah.png";
 import andreaBostanica from "../assets/testimoner/andrea-bostanica.png";
 import hansenLoe from "../assets/testimoner/hansen-loe.png";
 import Tag from "../props/Tag";
-import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const testimonials = [
   {
@@ -63,7 +61,7 @@ const testimonials = [
 ];
 
 const Avatar = ({ src, alt }) => (
-  <img className="w-10 h-10 rounded-full mr-3" src={src} alt={alt} />
+  <img className="w-10 h-10 rounded-full mr-2" src={src} alt={alt} />
 );
 
 Avatar.propTypes = {
@@ -72,10 +70,6 @@ Avatar.propTypes = {
 };
 
 const Testimonial = () => {
-  useEffect(() => {
-    AOS.init(); // Inisialisasi AOS saat komponen dimuat
-  }, []);
-
   return (
     <div
       className="container flex flex-col items-center mx-auto p-6"
@@ -95,7 +89,7 @@ const Testimonial = () => {
           <div
             key={index}
             className="bg-gray-100 p-4 rounded-lg"
-            data-aos="fade-up" // Animasi fade-up saat muncul
+            data-aos="zoom-in-down"
           >
             <div className="flex items-center mb-2">
               <Avatar
