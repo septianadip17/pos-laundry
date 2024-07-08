@@ -8,6 +8,7 @@ import analyticsReport from "../assets/images/analytic-and-report.png";
 import customerManagement from "../assets/images/customer-management.png";
 import Tag from "../props/Tag";
 
+// Data Features
 const features = [
   {
     id: 1,
@@ -45,6 +46,7 @@ const features = [
   },
 ];
 
+// FeatureCard Component
 const FeatureCard = ({
   icon,
   title,
@@ -65,13 +67,11 @@ const FeatureCard = ({
       } md:items-start`}
     >
       <div
-        className={`flex flex-col pt-8 ${
-          isOrderManagement ? "md:w-1/2" : ""
-        }`}
+        className={`flex flex-col pt-8 ${isOrderManagement ? "md:w-1/2" : ""}`}
       >
-        <img alt={`${title}-icon`} src={icon} className="w-12 h-12 mb-1" />{" "}
-        <h2 className="text-3xl my-2 font-semibold md:text-left">{title}</h2>{" "}
-        <p className="text-gray-500 mb-6 text-md">{description}</p>{" "}
+        <img alt={`${title}-icon`} src={icon} className="w-12 h-12 mb-1" />
+        <h2 className="text-3xl my-2 font-semibold md:text-left">{title}</h2>
+        <p className="text-gray-500 mb-6 text-md">{description}</p>
       </div>
       <div
         className={`text-center flex justify-center ${
@@ -80,7 +80,7 @@ const FeatureCard = ({
             : "md:w-full"
         }`}
       >
-        <img src={image} alt={imageAlt} className="w-80 pt-5 pb-0 rounded-lg" />{" "}
+        <img src={image} alt={imageAlt} className="w-80 pt-5" />
       </div>
     </div>
   </div>
@@ -97,6 +97,7 @@ FeatureCard.propTypes = {
   isOrderManagement: PropTypes.bool,
 };
 
+// Feature Component
 const Feature = () => {
   return (
     <div
@@ -112,7 +113,6 @@ const Feature = () => {
         data-aos="fade-up"
       />
 
-      {/* Feature cards */}
       <div className="grid grid-cols-1 gap-4 max-w-8xl w-full md:grid-cols-2">
         {features.map((feature) => (
           <FeatureCard key={feature.id} {...feature} />
