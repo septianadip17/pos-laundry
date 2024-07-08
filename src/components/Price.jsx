@@ -20,19 +20,16 @@ BenefitItem.propTypes = {
 // Komponen Package
 const Package = ({ duration, price, benefits, bestValue }) => {
   return (
-    <div
-      className="border border-border rounded-xl p-4 relative"
-      data-aos="fade-up"
-    >
-      {bestValue && (
-        <div className="inline-flex items-center mb-2 border-2 bg-orange-400 rounded-full px-3 border-orange-200 py-1 shadow-sm">
-          <img src={doubleStar} alt="double star icon" className="w-5 h-5" />
-          <span className="px-2 rounded-full font-semibold text-white">
-            Paling Hemat
-          </span>
-        </div>
-      )}
-      <div className="border-2 rounded-xl border-gray-200 p-3 mb-5 shadow-lg">
+    <div className="border rounded-xl p-4 relative" data-aos="fade-up">
+      <div className="border-2 rounded-xl border-gray-200 p-4 mb-5 shadow-lg">
+        {bestValue && (
+          <div className="inline-flex items-center border-2 bg-orange-400 rounded-full px-3 border-orange-200 mt-3 mb-5 py-1 shadow-sm">
+            <img src={doubleStar} alt="double star icon" className="w-5 h-5" />
+            <span className="px-2 rounded-full font-semibold text-white">
+              Paling Hemat
+            </span>
+          </div>
+        )}
         <h2 className="text-xl font-semibold mb-2">{duration}</h2>
         <p className="mb-4 text-sm">
           Ingin menikmati semua fitur? Berlangganan PRO untuk mengaksesnya
