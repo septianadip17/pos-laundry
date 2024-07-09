@@ -19,11 +19,11 @@ const Download = () => {
         minHeight: "40vh",
         borderRadius: "30px",
       }}
-      data-aos="fade-up" // Animasi fade-up saat muncul
+      data-aos="slide-up" // Animasi fade-up saat muncul
     >
       {/* Left Content */}
-      <div className="flex-1 md:text-left">
-        <div className="inline-flex items-center mb-4 border-2 mt-5 bg-blue-400 border-white rounded-full p-2 mx-auto md:mx-0">
+      <div className="flex-1 md:text-left my-2">
+        <div className="inline-flex items-center my-5 border-2 bg-blue-400 border-white rounded-full p-2 mx-auto md:mx-0">
           <img
             src={heartIcon}
             alt="heart icon"
@@ -64,7 +64,7 @@ const Download = () => {
           src={illustrationMockup}
           alt="Mobile App Screenshot"
           className="w-full md:max-w-sm"
-          data-aos="fade-left"
+          data-aos="slide-right"
         />
       </div>
     </div>
