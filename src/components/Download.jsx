@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 const styles = {
   container: {
     width: "100%",
-    minHeight: "45vh",
+    minHeight: "100%",
     borderRadius: "30px",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -36,7 +36,7 @@ const Download = () => {
   return (
     // Download Section
     <>
-      <div className="container">
+      <div className="container mt-10">
         <div
           id="download"
           className="container mx-auto px-4 rounded-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6"
