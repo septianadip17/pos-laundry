@@ -75,7 +75,6 @@ const Download = () => {
 
       {/* Right Content */}
       <div className="flex-1 flex justify-center md:justify-end">
-        <div className="mb-96"></div>
       </div>
     </div>
   );

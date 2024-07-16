@@ -5,7 +5,7 @@ const Tag = (props) => {
 
   return (
     <div
-      className="flex flex-col items-center w-full max-w-2xl text-center mb-8"
+      className="flex flex-col items-center w-full max-w-2xl text-center my-8"
       data-aos="fade-up"
     >
       {/* Tag Title */}
@@ -24,7 +24,7 @@ const Tag = (props) => {
       <h1 className="text-3xl font-bold mb-2 leading-snug" data-aos="fade-up">
         {props.title}
       </h1>
-      <p className="text-gray-500 text-sm px-2 mb-3" data-aos="fade-up">
+      <p className="text-gray-500 text-sm px-2 mb-3 w-9/12" data-aos="fade-up">
         {props.desc}
       </p>
     </div>
