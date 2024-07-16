@@ -51,7 +51,7 @@ const Header = () => {
           </span>
         </h1>
         {/* Description */}
-        <p className="text-md text-start text-gray-500 lg:text-left leading-normal">
+        <p className="text-md text-start text-gray-500 lg:text-left leading-normal w-9/12">
           POS Laundry mempermudah Anda dalam mengelola order, keuangan, dan
           mengatur bisnis secara efisien. Semua yang Anda butuhkan dalam satu
           aplikasi praktis.
@@ -74,7 +74,7 @@ const Header = () => {
           />
         </div>
         {/* Statistics */}
-        <div className="flex justify-between lg:justify-start space-x-5 mt-4">
+        <div className="flex justify-between w-full lg:justify-start space-x-16 mt-7  ">
           <StatisticItem value="25K" label="Download" />
           <StatisticItem value="12K" label="Mitra laundry" />
           <StatisticItem value="4.8" label="Rating playstore" />
