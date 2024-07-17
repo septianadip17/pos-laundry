@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 const styles = {
   container: {
     width: "90%",
-    minHeight: "50vh",
+    minHeight: "90vh",
     borderRadius: "30px",
     backgroundSize: "contain",
     backgroundPosition: "center",
